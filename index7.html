@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #0f0c29;
+      color: white;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p.subtitle {
+      font-size: 1.2em;
+      opacity: 0.85;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #00f5d4;
+    }
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+    li::before {
+      content: '• ';
+      color: #00f5d4;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      transition: transform 0.4s ease;
+      transform-style: preserve-3d;
+    }
+    .card:hover {
+      transform: perspective(600px) rotateY(8deg) rotateX(8deg);
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+    img.profile {
+      max-width: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 20px auto;
+      box-shadow: 0 0 15px #00f5d4;
+    }
+    a {
+      color: #00f5d4;
+      text-decoration: none;
+    }
+    blockquote {
+      font-style: italic;
+      color: #ddd;
+      border-left: 4px solid #00f5d4;
+      padding-left: 15px;
+      margin-top: 10px;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 1.1em;
+    }
+    .contact-info a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: transform 0.3s ease;
+    }
+    .contact-info a:hover {
+      transform: translateX(8px);
+    }
+    .icon {
+      font-size: 1.3em;
+      color: #00f5d4;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header data-aos="fade-down">
+    <img src="your-photo.png" alt="Dev Kumar" class="profile">
+    <h1>Dev Kumar</h1>
+    <p class="subtitle">Aspiring Data Analyst | Python Enthusiast | Power BI Developer | SQL Learner</p>
+  </header>
+
+  <section data-aos="fade-up">
+    <h2>Welcome to My Portfolio!</h2>
+    <p>Hi there! I'm Dev Kumar, an aspiring Data Analyst with a keen interest in uncovering insights from raw data.
+    Currently pursuing a B.Tech in Computer Science, I am building my skill set in data technologies to solve real-world business problems.
+    I enjoy working with Power BI, Python, and SQL to help businesses make smarter, data-driven decisions.</p>
+  </section>
+
+  <section data-aos="fade-right">
+    <h2>What I Do</h2>
+    <ul>
+      <li>Clean and structure messy datasets</li>
+      <li>Create interactive dashboards and reports</li>
+      <li>Write SQL queries to extract insights</li>
+      <li>Use Python for in-depth data analysis</li>
+    </ul>
+    <p>I believe data tells a story—I'm here to tell it right.</p>
+  </section>
+
+  <section data-aos="zoom-in-up">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li>Python – Pandas, NumPy, Matplotlib, Seaborn</li>
+      <li>Excel – Formulas, Pivot Tables, Data Cleaning</li>
+      <li>Power BI – Dashboards, DAX, Reports</li>
+      <li>SQL – Joins, Subqueries, Filtering</li>
+      <li>Data Analysis – EDA, Business Insights</li>
+    </ul>
+  </section>
+
+  <section data-aos="flip-up">
+    <h2>Projects</h2>
+    <div class="card" data-aos="fade-left">
+      <strong>Car Sales Analysis (Power BI)</strong><br>
+      Created a dashboard to analyze car sales by region and time. Identified seasonal trends and top-selling brands.
+    </div>
+    <div class="card" data-aos="fade-right">
+      <strong>Zomato Dataset Analysis (Python)</strong><br>
+      Explored Zomato restaurant data to analyze customer preferences and top cuisines.
+    </div>
+    <div class="card" data-aos="fade-left">
+      <strong>Excel-Based Sales Tracker</strong><br>
+      Built a dynamic Excel tracker with charts to monitor monthly performance.
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Education</h2>
+    <p>BTech in Computer Science (Pursuing)<br>
+    NGF College of Engineering and Technology<br>
+    Expected Graduation: 2025<br>
+    Palwal, Haryana</p>
+  </section>
+
+  <section data-aos="zoom-in">
+    <h2>Certifications & Training</h2>
+    <p>Data Analyst Training – CodeSquadz, Noida</p>
+  </section>
+
+  <section data-aos="fade-left">
+    <h2>Get in Touch</h2>
+    <div class="contact-info">
+      <a href="mailto:tanwardev41@gmail.com"><span class="icon">✉️</span> tanwardev41@gmail.com</a>
+      <a href="tel:+919992727619"><span class="icon">📞</span> +91 99927 27619</a>
+      <a href="https://linkedin.com/in/dev-tanwar-5294ab2aa" target="_blank"><span class="icon">🔗</span> dev-tanwar-5294ab2aa</a>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Quote I Believe In</h2>
+    <blockquote>“Without data, you’re just another person with an opinion.” – W. Edwards Deming</blockquote>
+  </section>
+
+  <footer>
+    &copy; 2025 Dev Kumar. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80 },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5 },
+        "size": { "value": 3 },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": { "enable": true, "speed": 2 }
+      }
+    });
+  </script>
+</body>
+</html>
